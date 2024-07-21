@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  background-color: rgb(241, 241, 241);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.searchInput {
+  padding: 5px;
+  width: 200px;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.leftPanel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chart {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.trendingMarket {
+  overflow-y: auto;
+  flex: 2;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.watchlist, .recentlyViewed {
+  margin-bottom: 110px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+}
